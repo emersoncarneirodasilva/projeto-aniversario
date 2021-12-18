@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+:root {
+    --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Fleur De Leah', cursive;
+    --fonte3: 'Gwendolyn', cursive;
+    --fonte4: 'Dancing Script', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    font-family: var(--fonte1);
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;    
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;    
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-family: var(--fonte2);
+    font-size: 7.7vw;
+}
+
+header > p {
+    padding-bottom: 50px;    
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;    
+}
+
+header a:hover, section a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;    
+    font-size: 4.7vw;   
+}
+
+section > p {
+    padding-bottom: 2em;
+    text-align: center;
+    font-family: var(--fonte3);
+}
+
+section a {
+    text-decoration: none;
+    color: rebeccapurple;
+    font-family: var(--fonte3);
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {    
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0, 0, 0, 0.437);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    /*display: inline-block;*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.212);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url("../images/1610029985926.jpg");
+    background-position: center center;
+}
+
+section#img02 {
+    background-image: url("../images/IMG_20201004_153338.jpg");
+    background-position: center center;
+}
+
+section#img03 {
+    background-image: url("../images/IMG-20150711-WA0077.jpg");
+    
+}
+
+section#img04 {
+    background-image: url("../images/IMG-20180210-WA0014.jpg");
+    background-position: center center;
+}
+
+section#img05 {
+    background-image: url("../images/CYMERA_20141019_211736.jpg");
+    background-position: center center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
